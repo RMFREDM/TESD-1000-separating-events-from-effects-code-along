@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./../challenges.css";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Separating Events from Effects Code-Along",
-	description: "Challenges for the Separating Events from Effects Code-Along",
+	title: "Separating Events from Effects Code-Along Challenge",
+	description: "Challenge for the Separating Events from Effects Code-Along",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
