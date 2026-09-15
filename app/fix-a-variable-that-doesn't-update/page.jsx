@@ -13,8 +13,7 @@ export default function Timer() {
 		return () => {
 			clearInterval(id);
 		};
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [increment]);
 
 	return (
 		<>

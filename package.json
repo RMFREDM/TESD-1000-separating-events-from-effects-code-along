@@ -11,7 +11,9 @@
 	"dependencies": {
 		"next": "^16.4.0-canary.30",
 		"react": "experimental",
-		"react-dom": "experimental"
+		"react-dom": "experimental",
+		"react-toastify": "^11.1.0",
+		"toastify-js": "^1.12.0"
 	},
 	"devDependencies": {
 		"@tailwindcss/postcss": "^4",

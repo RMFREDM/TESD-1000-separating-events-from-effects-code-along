@@ -12,18 +12,14 @@ export default function Timer() {
 		setCount((c) => c + increment);
 	});
 
-	const onMount = useEffectEvent(() => {
-		return setInterval(() => {
+	useEffect(() => {
+		const id = setInterval(() => {
 			onTick();
 		}, delay);
-	});
-
-	useEffect(() => {
-		const id = onMount();
 		return () => {
 			clearInterval(id);
 		};
-	}, []);
+	}, [delay]);
 
 	return (
 		<>
